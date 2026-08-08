@@ -1,0 +1,79 @@
+openapi: 3.1.0
+info:
+  title: PySpoof VoIP Bot API
+  version: 0.2.0
+  description: Public-safe reference contract for a programmable voice API.
+servers:
+  - url: https://api.example.com
+    description: Example server — replace with your deployment endpoint.
+security:
+  - ApiKeyAuth: []
+paths:
+  /callpanel/api/ping:
+    get:
+      security: []
+      summary: Health check
+      responses:
+        "200":
+          description: Service is available
+          content:
+            application/json:
+              example:
+                status: ok
+                service: voice-api
+  /callpanel/api/balance:
+    get:
+      summary: Get account balance
+      responses:
+        "200":
+          description: Balance
+          content:
+            application/json:
+              example:
+                balance: 1250
+                unit: credits
+  /callpanel/api/calls:
+    get:
+      summary: Get call history
+      responses:
+        "200":
+          description: Call history
+          content:
+            application/json:
+              example:
+                calls:
+                  - id: call_demo_123
+                    status: completed
+                    duration: 18
+  /callpanel/api/keymap:
+    get:
+      summary: Get DTMF keymap
+      responses:
+        "200":
+          description: Keymap
+          content:
+            application/json:
+              example:
+                "1": connect-agent
+                "2": repeat-menu
+                "3": play-hours
+                "9": end-call
+  /callpanel/api/audio/list:
+    get:
+      summary: List audio prompts
+      responses:
+        "200":
+          description: Audio list
+          content:
+            application/json:
+              example:
+                audio:
+                  - id: welcome_demo
+                    name: Welcome
+                    format: gsm
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-Key
