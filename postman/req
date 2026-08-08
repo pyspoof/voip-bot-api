@@ -1,0 +1,60 @@
+{
+  "info": {
+    "name": "PySpoof VoIP Bot API",
+    "description": "Public-safe API examples using placeholder infrastructure.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "baseUrl", "value": "https://api.example.com" },
+    { "key": "apiKey", "value": "your_api_key_here" }
+  ],
+  "item": [
+    {
+      "name": "Ping",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/callpanel/api/ping"
+      }
+    },
+    {
+      "name": "Balance",
+      "request": {
+        "method": "GET",
+        "header": [
+          { "key": "X-API-Key", "value": "{{apiKey}}" }
+        ],
+        "url": "{{baseUrl}}/callpanel/api/balance"
+      }
+    },
+    {
+      "name": "Call history",
+      "request": {
+        "method": "GET",
+        "header": [
+          { "key": "X-API-Key", "value": "{{apiKey}}" }
+        ],
+        "url": "{{baseUrl}}/callpanel/api/calls"
+      }
+    },
+    {
+      "name": "Keymap",
+      "request": {
+        "method": "GET",
+        "header": [
+          { "key": "X-API-Key", "value": "{{apiKey}}" }
+        ],
+        "url": "{{baseUrl}}/callpanel/api/keymap"
+      }
+    },
+    {
+      "name": "Audio list",
+      "request": {
+        "method": "GET",
+        "header": [
+          { "key": "X-API-Key", "value": "{{apiKey}}" }
+        ],
+        "url": "{{baseUrl}}/callpanel/api/audio/list"
+      }
+    }
+  ]
+}
