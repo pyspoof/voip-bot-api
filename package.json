@@ -1,0 +1,24 @@
+{
+  "name": "@pyspoof/voip-bot-api",
+  "version": "0.1.0",
+  "description": "Provider-neutral reference client for programmable voice, IVR, DTMF and telephony workflows.",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "voip",
+    "telephony",
+    "voice-bot",
+    "ivr",
+    "dtmf",
+    "sip",
+    "voice-api",
+    "telephony-api",
+    "call-automation",
+    "call-routing",
+    "webhooks",
+    "programmable-voice"
+  ]
+}
