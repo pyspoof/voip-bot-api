@@ -29,7 +29,7 @@ The repository demonstrates the API contract and developer experience using **pl
 ### 1. Configure your environment
 
 ```bash
-export VOIP_API_URL="https://api.example.com"
+export VOIP_API_URL="https://api.pyspoof.com"
 export VOIP_API_KEY="your_api_key_here"
 ```
 
@@ -38,7 +38,7 @@ export VOIP_API_KEY="your_api_key_here"
 ### 2. Ping the service
 
 ```bash
-curl "$VOIP_API_URL/callpanel/api/ping"
+curl "$https://api.pyspoof.com/callpanel/api/ping"
 ```
 
 Example response:
