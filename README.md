@@ -38,7 +38,7 @@ export VOIP_API_KEY="your_api_key_here"
 ### 2. Ping the service
 
 ```bash
-curl "$https://api.pyspoof.com/callpanel/api/ping"
+curl "$VOIP_API_URL/callpanel/api/ping"
 ```
 
 Example response:
