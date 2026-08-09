@@ -305,8 +305,3 @@ Have a question about the API, need help integrating PySpoof, or want to discuss
 </p>
 
 ---
-
-## 📄 License
-
-MIT.
-
