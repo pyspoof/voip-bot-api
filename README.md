@@ -285,6 +285,28 @@ That separation is intentional.
 
 `voip` `telephony` `voice-api` `voice-bot` `ivr` `dtmf` `sip` `call-automation` `call-routing` `programmable-voice` `telephony-api` `webhooks` `nodejs` `python` `rest-api` `openapi`
 
+
+## 🤝 Contact & Community
+
+Have a question about the API, need help integrating PySpoof, or want to discuss a use case?
+
+<p align="center">
+  <a href="https://t.me/pyspoof">
+    <img src="https://img.shields.io/badge/Telegram-PySpoof-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="PySpoof Telegram">
+  </a>
+  &nbsp;
+  <a href="https://github.com/pyspoof">
+    <img src="https://img.shields.io/badge/GitHub-PySpoof-181717?style=for-the-badge&logo=github&logoColor=white" alt="PySpoof GitHub">
+  </a>
+</p>
+
+<p align="center">
+  <sub>Developer support · API questions · Integration help</sub>
+</p>
+
+---
+
 ## 📄 License
 
 MIT.
+
